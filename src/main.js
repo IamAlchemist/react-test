@@ -1,15 +1,20 @@
-import React, {Component} from 'react';
-import {AppRegistry, View, Text} from 'react-native'
+import React, {Component} from 'react'
+import {AppRegistry} from 'react-native'
+import { Provider } from 'react-redux'
+import reducers from './reducers'
+import { createStore } from 'redux'
+import App from './components/app'
 
+const store = createStore(reducers)
 
-export default class App extends Component {
-
+export default class Main extends Component {
     render() {
         return (
-            <View style={{flex: 1, backgroundColor: 'red'}}>
-            </View>
+            <Provider store={store}>
+                <App/>
+            </Provider>
         )
     }
 }
 
-AppRegistry.registerComponent('LightNight', () => App);
+AppRegistry.registerComponent('LightNight', () => Main);

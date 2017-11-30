@@ -1,6 +1,8 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["react-native"],
+  "plugins": [
+    "react-native"
+  ],
   "extends": [
     "airbnb"
   ],
@@ -36,6 +38,7 @@
     "pit": false
   },
   "rules": {
+    "semi": "off",
     "object-curly-spacing": "off",
     "react/prefer-stateless-function": "off",
     "react/jsx-filename-extension": "off",
@@ -44,22 +47,39 @@
     "react/forbid-prop-types": "off",
     "react/jsx-space-before-closing": "off",
     "react/jsx-tag-spacing": "off",
-    "max-len": [2, 120, 4, {"ignoreUrls": true}],
     "class-methods-use-this": "off",
     "arrow-body-style": "off",
     "no-plusplus": "off",
     "import/prefer-default-export": "off",
     "global-require": "off",
     "consistent-return": "off",
-    "indent": "warn",
+    "react/jsx-indent": "off",
+    "indent": "off",
     "no-underscore-dangle": "off",
-
     "comma-dangle": "off",
     "import/no-extraneous-dependencies": "off",
     "jsx-a11y/img-has-alt": "off",
     "padded-blocks": "off",
     "no-prototype-builtins": "off",
-    "react/prop-types": "off"
+    "spaced-comment": "off",
+    "react/prop-types": "off",
+    "prefer-destructuring": "off",
+    "no-multiple-empty-lines": "off",
+    "react/sort-comp": "off",
+    "no-trailing-spaces": "off",
+    "react/jsx-indent-props": "off",
+    "import/first": "off",
+    "keyword-spacing": "off",
+    "no-return-assign": "off",
+    "react/jsx-no-comment-textnodes": "off",
+    "max-len": "off",
+    "react/jsx-first-prop-new-line": "off",
+    "react/jsx-max-props-per-line": "off",
+    "react/no-multi-comp": "off",
+    "no-mixed-operators": "off",
+    "react/no-array-index-key": "off",
+    "camelcase": "off",
+    "object-curly-newline": "off"
   },
   "env": {
     "browser": true,
