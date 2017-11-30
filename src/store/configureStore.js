@@ -1,6 +1,6 @@
 import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
-import rootReducer from '../reducers/index'
+import reducers from '../reducers'
 
 const middlewares = [thunk]
 
@@ -12,6 +12,6 @@ if (process.env.NODE_ENV === 'development') {
 const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
 
 export default function configureStore(initialState) {
-    const store = createStoreWithMiddleware(rootReducer, initialState)
+    const store = createStoreWithMiddleware(reducers, initialState)
     return store
 }
