@@ -11,7 +11,7 @@ import Todo from './todo'
 const TodoList = ({todos, onTodoClick}) => (
     <View style={styles.container}>
         {todos.map((todo) => {
-            return (<Todo key={todo.id} {...todos} onClick={() => onTodoClick(todo)}/>)
+            return (<Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)}/>)
         })}
     </View>
 )
